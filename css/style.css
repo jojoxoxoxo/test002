@@ -1,0 +1,204 @@
+/* 變數宣告 */
+:root{
+    --green:#4daf6bff;
+    --dgray:#1d1816ff;
+    --yellow:#f1b84fff;
+    --dbegie:#f7b096ff;
+    --begie:#faead4ff;
+    --lightgreen:#acc5aeff;
+    --blue:#6c8cacff;
+}
+
+/* 歸零設定 */
+body, h1, h2,h3,p,div,table,th,td,span,small,ul,ol,li{
+    margin:0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+img{
+    border: none;
+    vertical-align: bottom;
+}
+/* 基本設定 */
+body{
+    font-family: "微軟正黑體", sans-serif;
+    color: var(--dgray);
+    padding:24px 10px;
+}
+a:link, a:visited{
+    color: var(--dgray);
+}
+a:hover{
+    color:var(--green);
+}
+/* 版面結構設定 */
+#container{
+    width: 960px;
+    margin:0 auto;
+}
+#header, #content, #sidebar{
+    margin-bottom: 50px;
+}
+#content{
+    width: 600px;
+    float:left;
+}
+#sidebar{
+    width:300px;
+    float:right;
+}
+#footer, #headerimg{
+    clear:both;
+}
+/* 頁首設定 */
+#site{
+    float:left;
+}
+#site img{
+    /* width: 360px; */
+    height: 70px;
+    /* object-fit:cover; */
+}
+#iconmenu{
+    float: right;
+    text-align: center;
+    font-size: 35px;
+    padding: 30px 0 0 30px;
+    /* display: block; */
+    /* margin: 15; */
+}
+#iconmenu a{
+    color: var(--blue);
+    padding-left: 10px;
+    /* display: block; */
+    /* margin-top: -5; */
+}
+#iconmenu a:hover{
+    color:var(--green);
+}
+.img-headerimg{
+    width:960px;
+    height:300px;
+    object-fit:cover;
+    margin-top: 10px;
+}
+.m-img{
+    width: 600px;
+    height: 400px;
+    object-fit:cover;
+    margin: 10px 0;
+}
+.s-img{
+    width: 300px;
+    height: 300px;
+}
+/* 主選單設定 */
+#nav{
+    font-size: 14px;
+    background: var(--dgray);
+    border-top: solid 1px var(--begie);
+    overflow: hidden;
+}
+#nav li a{
+    color: azure;
+    display: block;
+    width: 120px;
+    padding: 5px 0;
+    float: left;
+    columns: var(--begie);
+    text-align: center;
+    border-right: solid 1px var(--begie);
+}
+#nav li a:hover{
+    background: var(--blue);
+}
+/* 內容區設定 */
+.date{
+    float: right;
+    background: var(--green);
+    text-align: center;
+    color: var(--begie);
+    padding: 18px 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    /* margin-top: -15px; */
+    margin-top: 10px;
+}
+.date span{
+    display: block;
+    font-size: 2em;
+}
+#content h2{
+    font-size: 1.75em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px var(--green);
+}
+#content p{
+    line-height: 1.6;
+    text-align: justify;       
+}
+.cat{
+    font-size: 0.875em;
+    margin:10px 0 30px;
+}
+/* 右方廣告區設定 */
+.ad_title{
+    font-size:26px;
+    color:var(--green);
+    margin-bottom: 15px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: 2% center;
+    padding: 5px 0 5px 40px;
+}
+/* 右方選單設定 */
+.menu{
+    margin-bottom: 50px;
+
+}
+.menu h3{
+    font-size:1.625em;
+    color: var(--green);
+    margin-bottom: 5px;
+}
+.menu ul{
+    border-top: solid 1px var(--green);
+}
+.menu li{
+    border-bottom: solid 1px var(--green);
+}
+.menu a{
+    font-size: 14px;
+    color: var(--dgray);
+    display: block;
+    padding: 10px 0 10px 20px;
+    background-image: url(../images/listmark.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;/* 不懂這個的意思 */
+}
+.menu a:hover{
+    background: var(--dbegie);
+}
+/* footer */
+#footer{
+    color: var(--yellow);
+    background-color: var(--dgray);
+    padding: 20px 30px 30px;
+}
+#footer small{
+    font-size: 0.75em;
+    font-weight: bold;
+    display: block;
+    margin-top: 8px; /* 在small element里設margin時, 要在margin那行之前先設display:block,再設margin, 這样margin才能產生作用*/
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Z Layout</title>
+	<style>
+		* {
+      box-sizing: border-box;
+    }
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		.header{
+			background: #f5f5dc;
+			padding: 20px;
+			text-align: center;
+		}
+		.row{
+			height: 460px;
+      position: relative;
+		}
+		.container{
+			/* background: white; */
+			padding:60px;
+		}
+		.column66{
+			float: left;
+      width: 66%;
+      padding: 20px;
+		}
+		.column33{
+			float:left;
+      width: 33%;
+      padding: 20px;
+		}
+    .bg_beige{
+      background: #f5f5dc;
+    }
+    /* img{
+            height: 400px;
+            width: 100%;
+            object-fit:cover;
+    } */
+		img{
+			height: 400px;
+			width:100% ;
+			object-fit: cover;
+		}
+		button{
+			border:none;
+			color: black;
+			padding: 14px 50px;
+			font-size: 16px;
+			cursor:pointer;
+			background: pink;
+			border-radius: 15px;
+			border-color:black;
+			border-style: solid;
+  		border-width:2px;
+			position:absolute;
+			bottom:20px;
+		}
+    .green_btn{
+      background: green;
+      color: white;
+    }
+    h1{
+      margin: 15px;
+      font-size: 64px;
+    }
+    b{
+      font-size: 48px;
+      margin: 0;
+      color: mediumseagreen;
+    }
+    .xlarge-text{
+      font-size: 36px;
+    }
+    .large-text{
+      font-size: 24px;
+    }
+    .small-text{
+      font-size: 20px;
+    }
+    .red_p{
+      color: red;
+    }
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Lorem ipsum dolor</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</header>
+
+<!-- 區塊 1 -->
+	<div class="container">
+		<div class="row">
+			<div class="column66">
+				<h1>The App</h1>
+				<b>Why buy it?</b>
+				<p><span class="xlarge-text">Lorem ipsum dolor</span>sit amet consectetur adipisicing elit. Reprehenderit accusantium minima.</p>
+				<button>Download App</button>
+			</div>
+			<div class="column33">
+				<img src="images/doge01.jpg">
+			</div>
+		</div>
+
+<!-- 區塊 2 -->
+		<div class="container bg_beige">
+			<div class="row">
+				<div class="column66">
+					<img src="images/cat03.jpg">
+				</div>
+				<div class="column33">
+					<h1>Clarity</h1>
+					<b class="red_p">Pixels, who?</b>
+					<p class="large-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur excepturi, minima eius</p>
+					<button class="green_btn">Read More</button>
+				</div>
+			</div>
+		</div>
+
+<!-- 區塊 3 -->
+		<div class="container">
+			<div class="row">
+				<div class="column33">
+					<img src="images/doge02.jpg">
+				</div>
+				<div class="column66">
+					<h1>The App</h1>
+                	<b>Why buy it?</b>
+                	<p><span class="xlarge-text">Lorem ipsum dolor</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus beatae aspernatur ratione porro quo voluptas unde, consequuntur nesciunt repudiandae culpa eligendi doloremque natus vero laboriosam neque, saepe suscipit maiores reprehenderit.
+                	</p>
+					<button>Download</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
